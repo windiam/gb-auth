@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.genebook</groupId>
+    <artifactId>gb-auth</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>gb-auth-web</artifactId>
+  <version>${gb.auth.version}</version>
+  <packaging>war</packaging>
+  <name>gb-auth-web</name>
+  <url>http://maven.apache.org</url>
+  
+  <dependencies>
+    <dependency>
+		<groupId>com.genebook</groupId>
+		<artifactId>gb-auth-core</artifactId>
+		<version>${gb.auth.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.genebook</groupId>
+		<artifactId>gb-auth-service</artifactId>
+		<version>${gb.auth.version}</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>gb-auth-web</finalName>
+  </build>
+</project>
