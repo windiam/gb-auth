@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry  location="C:\Users\wind\.m2\repository\mysql\mysql-connector-java\5.1.21\mysql-connector-java-5.1.21.jar"/>  
+  <context id="context1" >
+     <commentGenerator> 
+       <property name="suppressAllComments" value="true" />  
+    </commentGenerator> 
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/genebook_auth?useUnicode=true&amp;characterEncoding=utf-8" userId="root" password="123456" />
+    <javaModelGenerator targetPackage="com.genebook.auth.entity" targetProject="gb-auth-core" />
+    <sqlMapGenerator targetPackage="mapperXml" targetProject="gb-auth-service" />
+    <javaClientGenerator targetPackage="com.genebook.auth.mapper" targetProject="gb-auth-service" type="XMLMAPPER" />
+    <table tableName="sys_user" domainObjectName="SysUserEntity"></table>
+  </context>
+</generatorConfiguration>
